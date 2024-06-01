@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const studentForm = document.getElementById("studentForm");
   const studentList = document.getElementById("studentList");
 
-  // 페이지가 로드되면 학생 목록을 가져옵니다.
+  // 페이지가 로드되면 학생 목록을 가져옵니다...
   fetchStudents();
 
   studentForm.addEventListener("submit", function (event) {
