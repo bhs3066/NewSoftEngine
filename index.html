@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <form id="studentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="studentNo">Student Number:</label>
+      <input type="text" id="studentNo" name="studentNo" required /><br /><br />
+
+      <label for="attendance">출석 여부:</label>
+      <input type="checkbox" id="attendance" name="attendance" /><br /><br />
+
+      <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student List:</h2>
+    <ul id="studentList">
+      <li id="student-container">
+        <div id="attendance-color">출석 색상</div>
+        <p>이름</p>
+        <p>학번</p>
+        <p>출석여부 : 출석</p>
+        <button>출석</button>
+        <button>결석</button>
+        <button>지각</button>
+      </li>
+    </ul>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
