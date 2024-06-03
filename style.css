@@ -25,10 +25,14 @@ header img {
 }
 
 #register-delete-container {
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem; /* 각 섹션 사이의 거리 조정 */
+  padding: 1rem 0;
+  border-bottom: 2px solid #ccc; /* 구분선 추가 */
+  margin-bottom: 2rem; /* 학생 목록과의 거리 */
 }
 
 #create-student-form {
@@ -80,6 +84,9 @@ li {
 ul {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(5, 150px);
-  gap: 80px;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 2rem 0;
 }
