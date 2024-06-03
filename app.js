@@ -36,8 +36,8 @@ async function request() {
     attendanceColorDiv.id = "attendance-color";
     const info = document.createElement("p");
     info.innerText = `이름: ${student.name}
-          학번: ${student.studentNo}
-          `;
+
+          학번: ${student.studentNo}`;
 
     listItem.appendChild(attendanceColorDiv);
     listItem.appendChild(info);
@@ -81,10 +81,10 @@ async function request() {
       attendanceColorDiv.style.backgroundColor = "#3b85cf";
       attendanceColorDiv.innerText = "출석";
     } else if (student.attendance == 2) {
-      attendanceColorDiv.style.backgroundColor = "#ffe8008a";
+      attendanceColorDiv.style.backgroundColor = "#EDF079";
       attendanceColorDiv.innerText = "지각";
     } else {
-      attendanceColorDiv.style.backgroundColor = "#ff0000b5";
+      attendanceColorDiv.style.backgroundColor = "#F74248";
       attendanceColorDiv.innerText = "결석";
     }
 

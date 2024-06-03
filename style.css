@@ -7,17 +7,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  background-color: white;
+  height: 100px;
+  background-color: #0074b8;
+  color: white;
 }
 
 header img {
-  width: 80px;
-  height: 80px;
-  margin-right: 2rem;
+  width: 100px;
+  height: 100px;
+  margin-right: 3.5rem;
 }
 
 #container {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,8 +40,17 @@ header img {
 label {
   font-weight: bold;
 }
+
 input {
   margin: 1rem 0;
+  padding: 8px 0;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #3b85cf;
+  outline: none;
 }
 
 button {
@@ -47,13 +58,28 @@ button {
   border: none;
   background-color: #3b85cf;
   border-radius: 5px;
-  height: 2rem;
+  height: 2.5rem;
   color: white;
   font-weight: bold;
+  font-size: 1rem;
+}
+
+#list-container {
+  margin-top: 4rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#list-container h1 {
+  margin-bottom: 3rem;
 }
 
 li {
   list-style: none;
+}
+
+li p {
+  margin: 10px 0;
 }
 
 #attendance-color {
@@ -64,12 +90,14 @@ li {
   font-weight: bold;
   line-height: 50px;
   cursor: pointer;
+  color: white;
 }
 
 #student-container {
   border: 1px solid rgb(185, 185, 185);
   border-radius: 5px;
   padding: 5px;
+  background-color: white;
 }
 
 #buttonContainer {
@@ -80,6 +108,6 @@ li {
 ul {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(5, 150px);
+  grid-template-columns: repeat(5, 180px);
   gap: 80px;
 }
