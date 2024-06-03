@@ -109,5 +109,39 @@ ul {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(5, 180px);
-  gap: 80px;
+  gap: 60px;
+}
+
+@media (max-width: 1200px) {
+  ul {
+    grid-template-columns: repeat(4, 180px);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  ul {
+    grid-template-columns: repeat(3, 180px);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  header img {
+    margin-right: 0;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  #register-delete-container {
+    flex-direction: column;
+    align-items: start;
+  }
+  #register-delete-container div:first-child {
+    margin-bottom: 2rem;
+  }
+  ul {
+    grid-template-columns: repeat(2, 180px);
+    gap: 20px;
+  }
 }
